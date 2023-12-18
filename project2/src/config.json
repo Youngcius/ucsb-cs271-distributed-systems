@@ -1,0 +1,8 @@
+{
+    "HOST_IPv4": "localhost",
+    "HOST_PORT": 8000,
+    "LAYOUT_FILE": "layout.graphml",
+    "TOKEN_LOST_PROB": 0.0,
+    "MSG_RECV_DELAY": 3,
+    "TOKEN_HOLDING_TIME": 1
+}
