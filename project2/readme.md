@@ -4,6 +4,9 @@
 
 Refer to the project [description](./result/Winter23_CS271_Project2.pdf) for details.
 
+In the system implementation, we mainly use async and concurrent operations when sending HTTP requests and handling them. Due to the token-passing application and the marker-passing strategy is independent from each other, "thread" is also an needed primitive in this system.
+
+
 ### Brief thoughts of solutions
 
 **Data structures**
@@ -94,13 +97,8 @@ Commands:
 
 ### Comments:
 
-考虑如下情况：
+*A question worthy of consideration is that -- Why does the lecture say that FIFO channel ensures that messages received from markers will not be recorded in the channel state?*
 
+<!-- TODO: 为什么lecture中说 FIFO channel 保证了收到 marker 之后的 message 一定不会被记录在 channel state 中？ -->
 
-
-
-> TODO: 为什么lecture中说 FIFO channel 保证了收到 marker 之后的 message 一定不会被记录在 channel state 中？
-
-
-In the system implementation, we mainly use async and concurrent operations when sending HTTP requests and handling them. Due to the token-passing application and the marker-passing strategy is independent from each other, "thread" is also an needed primitive in this system.
 
